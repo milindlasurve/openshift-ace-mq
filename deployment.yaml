@@ -32,7 +32,7 @@ spec:
           value: "1"
         - name: MQ_QMGR_NAME
           value: PCS_UAT_QMG
-        image: docker-registry.uat.ipanlpm.com:5000/ace-mq:v6
+        image: docker-registry.uat.ipanlpm.com:5000/ace-mq:v6 <change image name>
         imagePullPolicy: IfNotPresent
         name: portall-ace-mq
         ports:
