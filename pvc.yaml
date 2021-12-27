@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: ace1 <create 6 pvc on that same just change the name of pvc and create>
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "managed-nfs-storage"   <change stroage name as per your storage class>
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
